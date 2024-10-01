@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-dwpflgf*00g&&=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['*']  # For EB. Adjust this in production.
+ALLOWED_HOSTS = ['.elasticbeanstalk.com', 'localhost', '127.0.0.1']  # For EB. Adjust this in production.
 
 # Application definition
 INSTALLED_APPS = [
