@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-dwpflgf*00g&&=sanvgna-_*bv!mix**-k(yx!$de+9(qx_198')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = ['.elasticbeanstalk.com', 'localhost', '127.0.0.1']  # For EB. Adjust this in production.
 
