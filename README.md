@@ -1,0 +1,2 @@
+[![Coverage Status](https://coveralls.io/repos/github/willy0905591915/SWE_HW1/badge.svg?branch=main)](https://coveralls.io/github/willy0905591915/SWE_HW1?branch=main)
+[![Build Status](https://app.travis-ci.com/willy0905591915/SWE_HW1.svg?branch=main)](https://app.travis-ci.com/willy0905591915/SWE_HW1)
