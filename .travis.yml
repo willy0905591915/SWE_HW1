@@ -11,6 +11,8 @@ before_install:
 install:
 - pip install -r requirements.txt
 script:
+- black --check .
+- flake8 .
 - python3 manage.py migrate
 - python3 manage.py test polls
 deploy:
