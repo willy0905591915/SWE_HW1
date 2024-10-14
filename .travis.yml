@@ -1,0 +1,15 @@
+language: python
+python:
+- '3.9'
+dist: focal
+services:
+- sqlite3
+before_install:
+- sudo apt-get update
+- sudo apt-get install sqlite3 libsqlite3-dev
+- sqlite3 --version
+install:
+- pip install -r requirements.txt
+script:
+- python3 manage.py migrate
+- python3 manage.py test polls
