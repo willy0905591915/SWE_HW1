@@ -16,7 +16,10 @@ script:
 - flake8 .
 - coverage run --source=mysite,polls manage.py test
 - python3 manage.py migrate
-- python3 manage.py test polls
+- echo "Deploying..."
+after_script:
+- echo "Finished deploying!"
+- coveralls
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
@@ -27,3 +30,7 @@ deploy:
   bucket_name: elasticbeanstalk-us-east-1-058264546835
   on:
     branch: main
+
+env:
+global:
+  - COVERALLS_REPO_TOKEN=Kc3QtWhSDxzf88B9WhPAAlphz0EAnKSz4
