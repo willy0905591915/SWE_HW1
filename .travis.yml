@@ -13,3 +13,13 @@ install:
 script:
 - python3 manage.py migrate
 - python3 manage.py test polls
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: us-east-1
+  app: mysite
+  env: my-env
+  bucket_name: elasticbeanstalk-us-east-1-058264546835
+  on:
+    branch: main
