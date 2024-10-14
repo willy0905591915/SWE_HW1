@@ -10,6 +10,7 @@ before_install:
 - sqlite3 --version
 install:
 - pip install -r requirements.txt
+- pip install black
 script:
 - black --check .
 - flake8 .
