@@ -23,7 +23,7 @@ after_script:
 
 env:
   global:
-    - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN
+    - COVERALLS_REPO_TOKEN=$VQzvTGD8E38SnwkKLArmpjW18sI8IbhJG
 
 deploy:
   provider: elasticbeanstalk
